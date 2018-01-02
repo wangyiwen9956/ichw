@@ -18,6 +18,7 @@ def wcount(lines, topn=10):
         lines=lines2
     word_list=lines2.split()
     for word in word_list:
+        word=word.lower()
         dic[word]=dic.get(word,0)+1
     alist=list(dic.items())
     all_times=[]
